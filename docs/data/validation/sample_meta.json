@@ -1,0 +1,38 @@
+{
+  "sample_version": 2,
+  "period_baseline": [
+    "2019-10-31",
+    "2020-02-28"
+  ],
+  "period_current": [
+    "2025-10-31",
+    "2026-02-28"
+  ],
+  "resolution_m": 20,
+  "seed": 42,
+  "classes": {
+    "1": "Bank erosion of stable land",
+    "5": "Char or sandbar lost",
+    "2": "Accretion",
+    "10": "Stable land",
+    "11": "Stable water",
+    "6": "New inland water"
+  },
+  "stratum_pixels": {
+    "1": 2693,
+    "5": 118740,
+    "2": 119284,
+    "10": 1666181,
+    "11": 76952,
+    "6": 10393
+  },
+  "points": 330,
+  "points_per_stratum": {
+    "1": 50,
+    "5": 50,
+    "2": 50,
+    "10": 75,
+    "11": 75,
+    "6": 30
+  }
+}
