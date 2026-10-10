@@ -1,0 +1,88 @@
+{
+  "boundary": {
+    "file": "data/majuli_boundary.geojson",
+    "source": "OpenStreetMap admin_level 5 relation",
+    "osm_relation": 9521299,
+    "area_km2": 797.7,
+    "prepared": "2026-10-10"
+  },
+  "rainfall_imd": {
+    "file": "data/rainfall_imd_mean_annual.tif",
+    "source": "IMD 0.25 deg gridded daily rainfall (Pai et al., 2014) via imdlib",
+    "years": [
+      2000,
+      2025
+    ],
+    "n_years": 26,
+    "district_mean_mm": 1971.712,
+    "prepared": "2026-10-10"
+  },
+  "rainfall_chirps": {
+    "file": "data/rainfall_chirps_mean_annual.tif",
+    "source": "CHIRPS v2.0 0.05 deg annual (Funk et al., 2015)",
+    "years": [
+      2000,
+      2024
+    ],
+    "n_years": 25,
+    "district_mean_mm": 2564.301,
+    "prepared": "2026-10-10"
+  },
+  "k_factor": {
+    "file": "data/k_factor_soilgrids.tif",
+    "source": "SoilGrids 2.0, 250 m (Poggio et al., 2021); topsoil 0-30 cm; K by Williams (1995) EPIC equation",
+    "district_mean_K": 0.016,
+    "district_mean_sand_pct": 39.932,
+    "district_mean_clay_pct": 30.854,
+    "district_mean_oc_pct": 2.36,
+    "prepared": "2026-10-10"
+  },
+  "history_jrc": {
+    "file": "data/jrc_gsw_transitions.tif",
+    "source": "JRC Global Surface Water v1.4 (Pekel et al., 2016), transitions 1984-2021, 30 m",
+    "tile": "90E_30N",
+    "area_ha": {
+      "Permanent water": 1202.0,
+      "New permanent water": 2379.8,
+      "Lost permanent water": 542.7,
+      "Seasonal water": 4501.0,
+      "New seasonal water": 15139.6,
+      "Lost seasonal water": 5615.6,
+      "Seasonal to permanent": 263.0,
+      "Permanent to seasonal": 3293.0,
+      "Ephemeral permanent": 319.9,
+      "Ephemeral seasonal": 9748.8
+    },
+    "land_to_water_ha": 17519.4,
+    "water_to_land_ha": 6158.3,
+    "prepared": "2026-10-10"
+  },
+  "exposure": {
+    "osm_roads": {
+      "features": 3231
+    },
+    "osm_embankments": {
+      "features": 16
+    },
+    "osm_facilities": {
+      "features": 27
+    },
+    "osm_places": {
+      "features": 20
+    },
+    "worldcover": {
+      "source": "ESA WorldCover 2021 v200, 10 m, aggregated to 100 m shares",
+      "items": 2
+    },
+    "population": {
+      "source": "WorldPop 2020, 100 m, ind_ppp_2020_UNadj_constrained.tif",
+      "people_in_window": 965977
+    },
+    "prepared": "2026-10-10"
+  },
+  "rainfall_crosscheck": {
+    "imd_mm": 1971.712,
+    "chirps_mm": 2564.301,
+    "difference_pct": 30.1
+  }
+}
