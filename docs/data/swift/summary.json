@@ -1,0 +1,162 @@
+{
+  "run": "2026-10-10 13:23 UTC",
+  "periods": {
+    "baseline": [
+      "2019-10-31",
+      "2020-02-28"
+    ],
+    "current": [
+      "2025-10-31",
+      "2026-02-28"
+    ]
+  },
+  "method": "SWiFT-Bank",
+  "resolution_m": 10,
+  "min_patch_ha": 0.02,
+  "area_analysed_km2": 645.5,
+  "settings": {
+    "fdr_q": 0.05,
+    "patch_p": 0.01,
+    "min_effect": 0.1,
+    "sigma0": 0.05,
+    "pure_water_mndwi": 0.3,
+    "pure_land_mndwi": -0.2,
+    "window_m": [
+      310,
+      1510
+    ]
+  },
+  "tests": {
+    "pixels_tested": 6444734,
+    "pixels_significant": 2774498
+  },
+  "area_ha": {
+    "Bank erosion (stable land to water)": 147.8,
+    "Accretion (water to land)": 5236.7,
+    "Char or sandbar lost (within river belt)": 5040.6,
+    "New inland water (pond or flooding)": 578.9
+  },
+  "bank_loss_patches": 427,
+  "bank_loss_ha": 5188.5,
+  "bank_footprint_ha": 7593.8,
+  "small_patches": 273,
+  "small_ha": 28.07,
+  "patch_p_median": 2.78040340094593e-66,
+  "size_hist": [
+    119,
+    59,
+    46,
+    49,
+    39,
+    47,
+    30,
+    38
+  ],
+  "size_labels": [
+    "0.02\u20130.05",
+    "0.05\u20130.1",
+    "0.1\u20130.2",
+    "0.2\u20130.4",
+    "0.4\u20131",
+    "1\u20135",
+    "5\u201320",
+    "> 20"
+  ],
+  "mdc_bank_m2": {
+    "median": 17.9,
+    "p10": 6.0,
+    "p90": 31.7,
+    "share_below_25m2": 0.73
+  },
+  "null_test": {
+    "swift_patches": 0,
+    "swift_ha": 0.0,
+    "swift_footprint_ha": 0.0,
+    "freq10_patches": 1478,
+    "freq10_ha": 387.17,
+    "dates_odd": 10,
+    "dates_even": 9,
+    "threshold_freq10": 0.1
+  },
+  "agreement": {
+    "share_freq10_loss_found": 0.996,
+    "share_swift_loss_in_freq10": 0.634,
+    "share_std20_loss_found": 0.998
+  },
+  "bankline_km": {
+    "baseline": 538.3,
+    "current": 723.3
+  },
+  "legend": [
+    [
+      "Bank erosion (stable land to water)",
+      "#d7191c"
+    ],
+    [
+      "Char or sandbar lost (within river belt)",
+      "#f59ec0"
+    ],
+    [
+      "New inland water (pond or flooding)",
+      "#66c2a5"
+    ],
+    [
+      "Accretion (water to land)",
+      "#2c7bb6"
+    ]
+  ],
+  "mdc_legend": [
+    [
+      "< 15 m\u00b2",
+      "#1a9850"
+    ],
+    [
+      "15\u201325 m\u00b2",
+      "#91cf60"
+    ],
+    [
+      "25\u201340 m\u00b2",
+      "#fee08b"
+    ],
+    [
+      "40\u201370 m\u00b2",
+      "#fc8d59"
+    ],
+    [
+      "> 70 m\u00b2",
+      "#d73027"
+    ]
+  ],
+  "retreat": {
+    "median_subpixel_m": 86.1
+  },
+  "layers": {
+    "swift": {
+      "file": "swift/change.png",
+      "bounds": [
+        [
+          26.861132,
+          93.954151
+        ],
+        [
+          27.18755,
+          94.597989
+        ]
+      ]
+    },
+    "mdc": {
+      "file": "swift/mdc.png",
+      "bounds": [
+        [
+          26.861132,
+          93.954151
+        ],
+        [
+          27.18755,
+          94.597989
+        ]
+      ]
+    }
+  },
+  "runtime_min": 1.0
+}
