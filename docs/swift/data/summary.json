@@ -1,5 +1,5 @@
 {
-  "run_date": "2026-10-10 18:34 UTC",
+  "run_date": "2026-10-12 09:07 UTC",
   "district": "Majuli",
   "period_baseline": [
     "2019-10-31",
@@ -230,6 +230,8 @@
       "swift_footprint_ha": 0.0,
       "freq10_patches": 1478,
       "freq10_ha": 387.17,
+      "freq20_patches": 224,
+      "freq20_ha": 257.36,
       "dates_odd": 10,
       "dates_even": 9,
       "threshold_freq10": 0.1

@@ -1,5 +1,5 @@
 {
-  "run": "2026-10-10 18:33 UTC",
+  "run": "2026-10-12 09:06 UTC",
   "periods": {
     "baseline": [
       "2019-10-31",
@@ -74,6 +74,8 @@
     "swift_footprint_ha": 0.0,
     "freq10_patches": 1478,
     "freq10_ha": 387.17,
+    "freq20_patches": 224,
+    "freq20_ha": 257.36,
     "dates_odd": 10,
     "dates_even": 9,
     "threshold_freq10": 0.1
@@ -82,6 +84,35 @@
     "share_freq10_loss_found": 0.996,
     "share_swift_loss_in_freq10": 0.634,
     "share_std20_loss_found": 0.998
+  },
+  "baseline_tests": {
+    "method": "Fisher exact test of water and land date counts per pixel; FDR 5 %; patch p < 0.01",
+    "thresholds": {
+      "freq10": [
+        0.1,
+        0.1
+      ],
+      "freq20": [
+        0.15,
+        0.15
+      ]
+    },
+    "freq10": {
+      "patches": 631,
+      "significant": 566,
+      "share_patches": 0.897,
+      "share_area": 0.999,
+      "loss_ha": 5283.6,
+      "loss_ha_significant": 5276.8
+    },
+    "freq20": {
+      "patches": 209,
+      "significant": 204,
+      "share_patches": 0.976,
+      "share_area": 0.999,
+      "loss_ha": 4988.3,
+      "loss_ha_significant": 4984.7
+    }
   },
   "bankline_km": {
     "baseline": 538.3,
@@ -158,5 +189,5 @@
       ]
     }
   },
-  "runtime_min": 1.0
+  "runtime_min": 1.1
 }
