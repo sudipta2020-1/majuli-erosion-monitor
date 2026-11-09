@@ -1,15 +1,15 @@
 {
  "tag": "swift-latest",
  "repository": "sudipta2020-1/majuli-erosion-monitor",
- "run": "2026-11-02 16:38 UTC",
+ "run": "2026-11-09 17:00 UTC",
  "periods": {
   "baseline": [
-   "2020-07-05",
-   "2020-11-02"
+   "2020-07-12",
+   "2020-11-09"
   ],
   "current": [
-   "2026-07-05",
-   "2026-11-02"
+   "2026-07-12",
+   "2026-11-09"
   ]
  },
  "crs": "EPSG:32646",
@@ -19,35 +19,35 @@
    "label": "Change classes, tested (10 m)",
    "format": "GeoTIFF",
    "group": "swift",
-   "size_mb": 0.35
+   "size_mb": 0.41
   },
   {
    "name": "swift_water_fraction_change_10m.tif",
    "label": "Change in water share of each pixel, % (10 m)",
    "format": "GeoTIFF",
    "group": "swift",
-   "size_mb": 4.08
+   "size_mb": 4.09
   },
   {
    "name": "swift_water_fraction_baseline_10m.tif",
-   "label": "Mean water share of each pixel, baseline window 2020-07-05 to 2020-11-02, % (10 m)",
+   "label": "Mean water share of each pixel, baseline window 2020-07-12 to 2020-11-09, % (10 m)",
    "format": "GeoTIFF",
    "group": "swift",
    "size_mb": 3.62
   },
   {
    "name": "swift_water_fraction_current_10m.tif",
-   "label": "Mean water share of each pixel, current window 2026-07-05 to 2026-11-02, % (10 m)",
+   "label": "Mean water share of each pixel, current window 2026-07-12 to 2026-11-09, % (10 m)",
    "format": "GeoTIFF",
    "group": "swift",
-   "size_mb": 3.38
+   "size_mb": 3.32
   },
   {
    "name": "swift_detection_limit_m2_10m.tif",
    "label": "Smallest detectable land loss per pixel, m\u00b2 (10 m)",
    "format": "GeoTIFF",
    "group": "swift",
-   "size_mb": 3.64
+   "size_mb": 3.51
   },
   {
    "name": "swift_loss_patches_shp.zip",
@@ -61,7 +61,7 @@
    "label": "Sub-pixel bank lines, baseline and current",
    "format": "Shapefile",
    "group": "swift",
-   "size_mb": 2.44
+   "size_mb": 2.47
   },
   {
    "name": "priority_sites_shp.zip",

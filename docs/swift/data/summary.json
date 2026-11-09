@@ -1,61 +1,61 @@
 {
-  "run_date": "2026-11-02 16:38 UTC",
+  "run_date": "2026-11-09 17:00 UTC",
   "district": "Majuli",
   "period_baseline": [
-    "2020-07-05",
-    "2020-11-02"
+    "2020-07-12",
+    "2020-11-09"
   ],
   "period_current": [
-    "2026-07-05",
-    "2026-11-02"
+    "2026-07-12",
+    "2026-11-09"
   ],
   "resolution_m": 20,
   "confidence": "normal",
   "repository": "sudipta2020-1/majuli-erosion-monitor",
   "district_area_ha": 79769.7,
   "clear_coverage_pct": 100.0,
-  "mean_soil_loss_t_ha_yr": 0.25,
+  "mean_soil_loss_t_ha_yr": 0.31,
   "risk_class_area_ha": {
-    "Very low": 60353.1,
-    "Low": 349.8,
-    "Moderate": 15.8,
-    "High": 0.7,
+    "Very low": 64030.4,
+    "Low": 478.5,
+    "Moderate": 15.6,
+    "High": 0.8,
     "Very high": 0.0
   },
   "change_area_ha": {
-    "Bank erosion (stable land to water)": 209.6,
-    "Accretion (water to land)": 2345.0,
-    "Vegetation loss": 3297.0,
-    "New bare soil": 623.0,
-    "Char or sandbar lost (within river belt)": 2109.5,
-    "New inland water (pond or flooding)": 339.6
+    "Bank erosion (stable land to water)": 207.5,
+    "Accretion (water to land)": 3511.8,
+    "Vegetation loss": 3795.8,
+    "New bare soil": 744.9,
+    "Char or sandbar lost (within river belt)": 2207.0,
+    "New inland water (pond or flooding)": 358.9
   },
   "years_between_periods": 6.0,
   "confidence_summary": {
     "mean_change_confidence": 0.999,
-    "change_area_high_confidence_ha": 7285.3,
+    "change_area_high_confidence_ha": 9875.0,
     "method": "SWiFT-Bank: one minus the p-value of the per-pixel Welch test (river corridor); Beta posterior of the standard run elsewhere"
   },
   "water_detection": {
     "baseline": {
-      "mndwi_threshold_otsu": 0.19,
-      "edge_pixels_optical": 317582,
+      "mndwi_threshold_otsu": 0.192,
+      "edge_pixels_optical": 324058,
       "mndwi_threshold_used": 0.2,
-      "vv_threshold_otsu": -14.07,
-      "edge_pixels_radar": 546587,
+      "vv_threshold_otsu": -14.1,
+      "edge_pixels_radar": 557654,
       "vv_threshold_used": -14.0,
-      "share_from_optical_frequency_pct": 98.8,
-      "share_from_radar_frequency_pct": 1.2,
+      "share_from_optical_frequency_pct": 99.4,
+      "share_from_radar_frequency_pct": 0.6,
       "share_from_composite_pct": 0.0,
       "frequency_min": 0.5,
       "min_observations": 2
     },
     "current": {
-      "mndwi_threshold_otsu": 0.151,
-      "edge_pixels_optical": 322505,
-      "mndwi_threshold_used": 0.15,
-      "vv_threshold_otsu": -14.53,
-      "edge_pixels_radar": 578460,
+      "mndwi_threshold_otsu": 0.193,
+      "edge_pixels_optical": 322372,
+      "mndwi_threshold_used": 0.2,
+      "vv_threshold_otsu": -14.59,
+      "edge_pixels_radar": 581925,
       "vv_threshold_used": -15.0,
       "share_from_optical_frequency_pct": 100.0,
       "share_from_radar_frequency_pct": 0.0,
@@ -67,10 +67,10 @@
   },
   "hotspots_listed": 50,
   "sites_by_urgency": {
-    "Immediate": 7,
-    "Before monsoon": 15,
-    "Routine": 18,
-    "Monitor": 10
+    "Immediate": 6,
+    "Before monsoon": 16,
+    "Routine": 23,
+    "Monitor": 5
   },
   "field": {
     "records": 0
@@ -87,109 +87,109 @@
     "target": "Bank loss (stable land or chars) between the baseline and current windows",
     "predictors_from": "baseline window conditions; predictions use current conditions",
     "training_pixels": 150000,
-    "positive_share": 0.105,
-    "domain_pixels": 951812,
+    "positive_share": 0.095,
+    "domain_pixels": 972478,
     "max_distance_m": 3000.0,
     "cv": "spatial block cross-validation, 6 blocks along the river",
     "metrics": {
       "Random Forest": {
-        "roc_auc": 0.941,
-        "pr_auc": 0.55,
-        "captured_top10pct": 0.559,
-        "captured_top20pct": 0.873,
-        "brier": 0.0584
+        "roc_auc": 0.918,
+        "pr_auc": 0.454,
+        "captured_top10pct": 0.517,
+        "captured_top20pct": 0.808,
+        "brier": 0.062
       },
       "XGBoost": {
-        "roc_auc": 0.94,
-        "pr_auc": 0.54,
-        "captured_top10pct": 0.541,
-        "captured_top20pct": 0.867,
-        "brier": 0.0637
+        "roc_auc": 0.915,
+        "pr_auc": 0.441,
+        "captured_top10pct": 0.494,
+        "captured_top20pct": 0.801,
+        "brier": 0.0686
       },
       "Ensemble (RF + XGBoost)": {
-        "roc_auc": 0.941,
-        "pr_auc": 0.547,
-        "captured_top10pct": 0.553,
-        "captured_top20pct": 0.875,
-        "brier": 0.0598
+        "roc_auc": 0.918,
+        "pr_auc": 0.449,
+        "captured_top10pct": 0.508,
+        "captured_top20pct": 0.808,
+        "brier": 0.0641
       },
       "RUSLE soil loss (baseline)": {
-        "roc_auc": 0.778,
-        "pr_auc": 0.228,
-        "captured_top10pct": 0.216,
-        "captured_top20pct": 0.38
+        "roc_auc": 0.766,
+        "pr_auc": 0.199,
+        "captured_top10pct": 0.209,
+        "captured_top20pct": 0.37
       },
       "Distance to river only": {
-        "roc_auc": 0.893,
-        "pr_auc": 0.404,
-        "captured_top10pct": 0.418,
-        "captured_top20pct": 0.707
+        "roc_auc": 0.876,
+        "pr_auc": 0.34,
+        "captured_top10pct": 0.39,
+        "captured_top20pct": 0.678
       }
     },
     "feature_importance": [
       [
         "River water within 3 km",
-        0.2896
+        0.2734
       ],
       [
         "River water within 1 km",
-        0.1661
-      ],
-      [
-        "Past bank loss within 1 km",
-        0.098
+        0.16
       ],
       [
         "NDVI within 300 m",
-        0.0935
+        0.1076
+      ],
+      [
+        "Past bank loss within 1 km",
+        0.1006
       ],
       [
         "Distance to channel",
-        0.0675
-      ],
-      [
-        "River water within 300 m",
-        0.057
+        0.0559
       ],
       [
         "Soil erodibility K",
-        0.0486
+        0.0545
       ],
       [
-        "NDVI",
-        0.0338
+        "River water within 300 m",
+        0.0389
       ],
       [
         "Height above low ground",
-        0.0329
+        0.0388
       ],
       [
-        "Water at any time 1984-2021",
-        0.0295
+        "NDVI",
+        0.0373
       ],
       [
         "Bare soil index",
-        0.0261
+        0.0294
+      ],
+      [
+        "Water at any time 1984-2021",
+        0.0279
       ],
       [
         "MNDWI",
-        0.0226
-      ],
-      [
-        "Slope",
-        0.0192
+        0.0261
       ],
       [
         "Water frequency",
-        0.0157
+        0.0258
+      ],
+      [
+        "Slope",
+        0.0239
       ]
     ],
     "susceptibility_area_ha": {
-      "Very low": 27179.1,
-      "Low": 1845.6,
-      "Moderate": 1935.4,
-      "High": 2320.4,
-      "Very high": 4004.6
+      "Very low": 25992.9,
+      "Low": 2796.9,
+      "Moderate": 3169.8,
+      "High": 2977.2,
+      "Very high": 3305.1
     },
     "thresholds": [
       0.05,
@@ -209,8 +209,8 @@
       "places"
     ],
     "buffer_m": 500,
-    "people_near_bank_erosion": 35398,
-    "people_near_high_ai_susceptibility": 58103
+    "people_near_bank_erosion": 38034,
+    "people_near_high_ai_susceptibility": 50616
   },
   "history_area_ha": {
     "Land to permanent water": 2379.3,
@@ -222,27 +222,27 @@
   "swift": {
     "corridor_km2": 645.5,
     "min_patch_ha": 0.02,
-    "small_patches": 422,
-    "small_ha": 46.64,
+    "small_patches": 401,
+    "small_ha": 43.63,
     "null_test": {
       "swift_patches": 0,
       "swift_ha": 0.0,
       "swift_footprint_ha": 0.0,
-      "freq10_patches": 2648,
-      "freq10_ha": 3928.97,
-      "freq20_patches": 910,
-      "freq20_ha": 3828.28,
-      "dates_odd": 5,
+      "freq10_patches": 3022,
+      "freq10_ha": 3002.54,
+      "freq20_patches": 761,
+      "freq20_ha": 2740.64,
+      "dates_odd": 6,
       "dates_even": 5,
       "threshold_freq10": 0.1
     },
     "mdc_bank_m2": {
-      "median": 34.1,
-      "p10": 8.6,
-      "p90": 59.2,
-      "share_below_25m2": 0.376
+      "median": 38.5,
+      "p10": 9.5,
+      "p90": 59.1,
+      "share_below_25m2": 0.317
     },
-    "bank_loss_patches": 728
+    "bank_loss_patches": 694
   },
   "accuracy_note": "The accuracy assessment sample was drawn for the standard map and is reported on the standard district tab. For SWiFT-Bank, the false-alarm rate is checked on every run with the split-window null test: 0.0 ha of false change in this run. Field checks at the reported small losses are needed to measure its accuracy against the ground.",
   "validate_url": "../validate.html"
