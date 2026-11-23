@@ -1,13 +1,13 @@
 {
-  "run_date": "2026-11-16 12:35 UTC",
+  "run_date": "2026-11-23 14:15 UTC",
   "district": "Majuli",
   "period_baseline": [
-    "2020-07-19",
-    "2020-11-16"
+    "2020-07-26",
+    "2020-11-23"
   ],
   "period_current": [
-    "2026-07-19",
-    "2026-11-16"
+    "2026-07-26",
+    "2026-11-23"
   ],
   "resolution_m": 20,
   "confidence": "normal",
@@ -24,25 +24,25 @@
   },
   "change_area_ha": {
     "Bank erosion (stable land to water)": 205.2,
-    "Accretion (water to land)": 9188.3,
-    "Vegetation loss": 3690.8,
+    "Accretion (water to land)": 9174.8,
+    "Vegetation loss": 3690.6,
     "New bare soil": 810.5,
-    "Char or sandbar lost (within river belt)": 3852.4,
-    "New inland water (pond or flooding)": 252.5
+    "Char or sandbar lost (within river belt)": 3873.8,
+    "New inland water (pond or flooding)": 253.7
   },
   "years_between_periods": 6.0,
   "confidence_summary": {
     "mean_change_confidence": 0.784,
-    "change_area_high_confidence_ha": 4824.6,
+    "change_area_high_confidence_ha": 4824.8,
     "method": "Beta posterior of per-date water observations; change confidence = product of the baseline and current label confidences"
   },
   "water_detection": {
     "baseline": {
       "mndwi_threshold_otsu": 0.194,
-      "edge_pixels_optical": 329355,
+      "edge_pixels_optical": 328984,
       "mndwi_threshold_used": 0.2,
-      "vv_threshold_otsu": -14.06,
-      "edge_pixels_radar": 531261,
+      "vv_threshold_otsu": -14.14,
+      "edge_pixels_radar": 513332,
       "vv_threshold_used": -14.0,
       "share_from_optical_frequency_pct": 99.5,
       "share_from_radar_frequency_pct": 0.5,
@@ -55,7 +55,7 @@
       "edge_pixels_optical": 310995,
       "mndwi_threshold_used": 0.2,
       "vv_threshold_otsu": -14.54,
-      "edge_pixels_radar": 573106,
+      "edge_pixels_radar": 573629,
       "vv_threshold_used": -15.0,
       "share_from_optical_frequency_pct": 100.0,
       "share_from_radar_frequency_pct": 0.0,
@@ -68,9 +68,9 @@
   "hotspots_listed": 50,
   "sites_by_urgency": {
     "Immediate": 5,
-    "Before monsoon": 16,
-    "Routine": 21,
-    "Monitor": 8
+    "Before monsoon": 15,
+    "Routine": 24,
+    "Monitor": 6
   },
   "field": {
     "records": 0
@@ -87,61 +87,61 @@
     "target": "Bank loss (stable land or chars) between the baseline and current windows",
     "predictors_from": "baseline window conditions; predictions use current conditions",
     "training_pixels": 150000,
-    "positive_share": 0.103,
-    "domain_pixels": 989472,
+    "positive_share": 0.102,
+    "domain_pixels": 990392,
     "max_distance_m": 3000.0,
     "cv": "spatial block cross-validation, 6 blocks along the river",
     "metrics": {
       "Random Forest": {
-        "roc_auc": 0.911,
-        "pr_auc": 0.449,
-        "captured_top10pct": 0.489,
-        "captured_top20pct": 0.778,
-        "brier": 0.0669
+        "roc_auc": 0.909,
+        "pr_auc": 0.439,
+        "captured_top10pct": 0.479,
+        "captured_top20pct": 0.767,
+        "brier": 0.0678
       },
       "XGBoost": {
-        "roc_auc": 0.908,
-        "pr_auc": 0.433,
-        "captured_top10pct": 0.464,
-        "captured_top20pct": 0.774,
+        "roc_auc": 0.906,
+        "pr_auc": 0.435,
+        "captured_top10pct": 0.463,
+        "captured_top20pct": 0.772,
         "brier": 0.0737
       },
       "Ensemble (RF + XGBoost)": {
-        "roc_auc": 0.911,
-        "pr_auc": 0.443,
-        "captured_top10pct": 0.478,
-        "captured_top20pct": 0.779,
-        "brier": 0.0691
+        "roc_auc": 0.909,
+        "pr_auc": 0.439,
+        "captured_top10pct": 0.472,
+        "captured_top20pct": 0.774,
+        "brier": 0.0695
       },
       "RUSLE soil loss (baseline)": {
-        "roc_auc": 0.756,
-        "pr_auc": 0.202,
-        "captured_top10pct": 0.195,
-        "captured_top20pct": 0.351
+        "roc_auc": 0.757,
+        "pr_auc": 0.203,
+        "captured_top10pct": 0.198,
+        "captured_top20pct": 0.356
       },
       "Distance to river only": {
-        "roc_auc": 0.875,
-        "pr_auc": 0.351,
-        "captured_top10pct": 0.373,
-        "captured_top20pct": 0.667
+        "roc_auc": 0.871,
+        "pr_auc": 0.345,
+        "captured_top10pct": 0.37,
+        "captured_top20pct": 0.652
       }
     },
     "feature_importance": [
       [
         "River water within 3 km",
-        0.2634
+        0.2523
       ],
       [
         "River water within 1 km",
-        0.147
+        0.1584
       ],
       [
         "Past bank loss within 1 km",
-        0.1076
+        0.1063
       ],
       [
         "NDVI within 300 m",
-        0.1018
+        0.1059
       ],
       [
         "Distance to channel",
@@ -149,47 +149,47 @@
       ],
       [
         "Soil erodibility K",
-        0.0565
-      ],
-      [
-        "River water within 300 m",
-        0.0391
-      ],
-      [
-        "NDVI",
-        0.0381
+        0.0573
       ],
       [
         "Height above low ground",
-        0.0372
+        0.0398
+      ],
+      [
+        "NDVI",
+        0.0384
+      ],
+      [
+        "River water within 300 m",
+        0.0361
       ],
       [
         "Bare soil index",
-        0.0316
-      ],
-      [
-        "Water at any time 1984-2021",
-        0.0294
+        0.0296
       ],
       [
         "Water frequency",
-        0.0283
+        0.0288
       ],
       [
         "MNDWI",
-        0.0262
+        0.0263
+      ],
+      [
+        "Water at any time 1984-2021",
+        0.025
       ],
       [
         "Slope",
-        0.0218
+        0.0238
       ]
     ],
     "susceptibility_area_ha": {
-      "Very low": 25874.5,
-      "Low": 2701.6,
-      "Moderate": 3175.8,
-      "High": 3359.2,
-      "Very high": 3547.8
+      "Very low": 25461.3,
+      "Low": 2753.2,
+      "Moderate": 3214.2,
+      "High": 3496.2,
+      "Very high": 3734.1
     },
     "thresholds": [
       0.05,
@@ -210,7 +210,7 @@
     ],
     "buffer_m": 500,
     "people_near_bank_erosion": 14703,
-    "people_near_high_ai_susceptibility": 50964
+    "people_near_high_ai_susceptibility": 50748
   },
   "history_area_ha": {
     "Land to permanent water": 2379.3,
