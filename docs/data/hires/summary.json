@@ -1,13 +1,13 @@
 {
-  "run": "2026-11-16 15:49 UTC",
+  "run": "2026-11-23 18:13 UTC",
   "periods": {
     "baseline": [
-      "2020-07-19",
-      "2020-11-16"
+      "2020-07-26",
+      "2020-11-23"
     ],
     "current": [
-      "2026-07-19",
-      "2026-11-16"
+      "2026-07-26",
+      "2026-11-23"
     ]
   },
   "district": "Majuli",
@@ -19,7 +19,7 @@
     "baseline": {
       "threshold": 0.1,
       "otsu": 0.121,
-      "edge_px": 811202
+      "edge_px": 810099
     },
     "current": {
       "threshold": 0.1,
@@ -30,33 +30,33 @@
   "hires": {
     "area_ha": {
       "Bank erosion (stable land to water)": 220.4,
-      "Accretion (water to land)": 9133.7,
-      "Char or sandbar lost (within river belt)": 3845.1,
+      "Accretion (water to land)": 9119.5,
+      "Char or sandbar lost (within river belt)": 3868.2,
       "New inland water (pond or flooding)": 133.8
     },
-    "bank_loss_patches": 815,
-    "bank_loss_ha": 4072.6,
+    "bank_loss_patches": 807,
+    "bank_loss_ha": 4095.9,
     "size_hist": [
       0,
       199,
-      143,
-      117,
+      140,
       118,
-      123,
+      116,
+      119,
       70,
       45
     ],
-    "small_patches": 459,
-    "small_ha": 67.01,
+    "small_patches": 457,
+    "small_ha": 66.86,
     "mean_confidence": 0.784,
     "bankline_km": {
-      "baseline": 918.8,
+      "baseline": 909.8,
       "current": 831.1
     },
     "retreat": {
-      "median_subpixel_m": 56.8,
-      "median_pixel_m": 32.0,
-      "p90_subpixel_m": 264.6
+      "median_subpixel_m": 61.1,
+      "median_pixel_m": 30.0,
+      "p90_subpixel_m": 286.0
     }
   },
   "size_labels": [
@@ -72,31 +72,31 @@
   "standard": {
     "area_ha": {
       "Bank erosion (stable land to water)": 203.8,
-      "Accretion (water to land)": 9127.6,
-      "Char or sandbar lost (within river belt)": 3839.9,
-      "New inland water (pond or flooding)": 190.8
+      "Accretion (water to land)": 9114.3,
+      "Char or sandbar lost (within river belt)": 3861.1,
+      "New inland water (pond or flooding)": 191.8
     },
     "resolution_m": 20,
     "min_patch_ha": 0.4,
-    "bank_loss_patches": 318,
-    "bank_loss_ha": 4009.6,
+    "bank_loss_patches": 314,
+    "bank_loss_ha": 4032.2,
     "size_hist": [
       0,
       0,
       0,
       0,
-      98,
-      111,
-      66,
+      97,
+      107,
+      67,
       43
     ]
   },
   "agreement": {
-    "iou_bank_loss": 0.875,
+    "iou_bank_loss": 0.876,
     "share_10m_within_20m_of_standard": 0.966,
     "share_standard_within_20m_of_10m": 0.997,
-    "new_small_patches": 378,
-    "new_small_ha": 51.33
+    "new_small_patches": 375,
+    "new_small_ha": 50.99
   },
   "layers": {
     "change20": {
@@ -181,10 +181,10 @@
       "area_ha": 0.36
     },
     {
-      "lat": 26.875186,
-      "lon": 93.9962,
+      "lat": 26.887533,
+      "lon": 93.999127,
       "area_ha": 0.36
     }
   ],
-  "runtime_min": 0.5
+  "runtime_min": 0.9
 }
